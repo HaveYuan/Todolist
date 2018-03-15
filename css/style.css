@@ -1,0 +1,198 @@
+#spinner {
+	width: 150px;
+     text-align: center;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     -webkit-transform: translateX(-50%) translateY(-50%);
+}
+#spinner > img {
+	display:block;
+    margin: 0 auto 50px;
+}
+#spinner > div {
+    width: 14px;
+    height: 14px;
+    background-color: #03a9f4;
+     
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    Prevent first frame from flickering when animation starts
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+     
+#spinner .bounce1 {
+  	-webkit-animation-delay: -0.32s;
+  	animation-delay: -0.32s;
+}
+     
+#spinner .bounce2 {
+	-webkit-animation-delay -0.16s;
+	animation-delay: -0.16s
+}
+@-webkit-keyframes bounceelay {
+	0%, 80%, 100% { -webkittransform: scale(0.0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+     
+@keyframes bouncedelay {
+	0%, 80%, 100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+      } 40% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+}
+#content{
+	display: none;
+	margin-top: 50px;
+	padding: 30px;
+}
+.input_top input{
+	height: 50px;
+	font-size: 18px;
+}
+.checkbox{
+	font-size: 16px;
+}
+.input_bottom_right button{
+	margin-top: 5px;
+	float: right;
+}
+.notfinish{
+	font-size: 16px;
+	margin-top: 20px;
+	position: relative;
+}
+span{
+	font-size: 12px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: red;
+	color: #fff;
+	position: absolute;
+	top: 2px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.notfinish p{
+	position: absolute;
+	left: 24px;
+}
+.border_style{
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.weight{
+	margin-top: 10px;
+}
+.boxheight{
+	height: 15px;
+}
+.boxwidth{
+	width: 25%;
+}
+.bg_blue{
+	background-color: #3a87ad;
+}
+.bg_green{
+	background-color: #468847;
+}
+.bg_coral{
+	background-color: #c09853;
+}
+.bg_red{
+	background-color: #b94a48;
+}
+	.sub input[type=checkbox]{
+padding-top: 4px;
+margin-right: 6px;}
+.date_height{
+	margin-top:2px;
+}
+.glyphicon{
+	font-size: 20px;
+	margin-left: 10px;
+	color: #c1b1b1;
+}
+#Dblue{
+	background-color: #d9ebf7;
+	color: #3a87ad;
+	width: 100%;
+	padding: 14px 16px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+#Cgreen{
+	background-color: #dff0d8;
+	color: #468847;
+	width: 100%;
+	padding: 14px 16px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+#Bcoral{
+	background-color: #fcf8e3;
+	color: #c09853;
+	width: 100%;
+	padding: 14px 16px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+#Ared{
+	background-color: #f2dede;
+	color: #b94a48;
+	width: 100%;
+	padding: 14px 16px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.glyphicon:hover{
+	cursor: pointer;
+}
+@-webkit-keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+	    -webkit-transform: translate3d(-10px, 0, 0);
+	    transform: translate3d(-10px, 0, 0);
+	}
+
+	20%, 40%, 60%, 80% {
+	    -webkit-transform: translate3d(10px, 0, 0);
+	    transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	}
+
+	20%, 40%, 60%{
+	    -webkit-transform: translate3d(-10px, 0, 0);
+	    transform: translate3d(-10px, 0, 0);
+	}
+
+	10%, 30%, 50% {
+	    -webkit-transform: translate3d(10px, 0, 0);
+	    transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	animation:shake 0.8s ease;
+}
+.btn_bgcolor{
+	background-color: #FFE384;
+}
